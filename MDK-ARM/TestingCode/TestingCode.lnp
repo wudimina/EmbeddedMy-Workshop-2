@@ -1,0 +1,28 @@
+--cpu Cortex-M0
+"testingcode\stm32f0xx_hal_rcc_ex.o"
+"testingcode\stm32f0xx_hal_pwr.o"
+"testingcode\stm32f0xx_hal_i2c_ex.o"
+"testingcode\stm32f0xx_hal_spi.o"
+"testingcode\stm32f0xx_hal_dma.o"
+"testingcode\stm32f0xx_hal_tim.o"
+"testingcode\stm32f0xx_hal_tim_ex.o"
+"testingcode\stm32f0xx_hal.o"
+"testingcode\stm32f0xx_hal_flash.o"
+"testingcode\stm32f0xx_hal_gpio.o"
+"testingcode\stm32f0xx_hal_pwr_ex.o"
+"testingcode\stm32f0xx_hal_flash_ex.o"
+"testingcode\stm32f0xx_hal_spi_ex.o"
+"testingcode\stm32f0xx_hal_cortex.o"
+"testingcode\stm32f0xx_hal_rcc.o"
+"testingcode\stm32f0xx_hal_i2c.o"
+"testingcode\stm32f0xx_hal_uart.o"
+"testingcode\stm32f0xx_hal_uart_ex.o"
+"testingcode\stm32f0xx_hal_msp.o"
+"testingcode\main.o"
+"testingcode\stm32f0xx_it.o"
+"testingcode\startup_stm32f072xb.o"
+"testingcode\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "TestingCode\TestingCode.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TestingCode.map" -o TestingCode\TestingCode.axf
